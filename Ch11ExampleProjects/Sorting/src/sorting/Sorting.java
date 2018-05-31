@@ -145,6 +145,8 @@ public class Sorting {
         array = mergeSort(array);
         // print sorted array
         printArray("Sorted array", array);
+        // find position
+        findPosition(array);
     }   // end main
     
 }   // end BinarySearchProject class
