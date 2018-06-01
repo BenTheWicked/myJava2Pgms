@@ -184,11 +184,13 @@ public class BinaryAndTernarySearch {
     //***************************************************************
     // printing method
     public static void printArray(String msg, int[] array) {
+        int count = 0;
         System.out.println(msg);
         for (int i : array) {
-            System.out.printf("%3d", i);
-            // How do I tell it to count fifteen spots? {
-                System.out.println("\n");
+            System.out.printf("%5d", i);
+            count++;
+            if (count % 15 == 0) {
+                System.out.println();
             }
         }
         System.out.println();
