@@ -14,10 +14,14 @@ public class DayTraderJava {
         double moneyReturned;       // money that's earned at end of day
         int day;                    // current day, ranges from 1 to 90
         
-        for (day=1; day<=90; day++) {
+        for (day=1; day<=90 && !(balance < 1.0 || balance > 5000.0); day++) {
+            /*
+            This break statement is unnecessary, if we update
+            the header.
             if (balance < 1.0 || balance > 5000.0) {
                 break;
             }
+            */
             balance = moneyInvested = balance / 2.0;
             moneyReturned = moneyInvested * (Math.random() * 2.0);
             balance += moneyReturned;
