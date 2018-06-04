@@ -34,7 +34,12 @@
 /JavaApplication84/build/
 /Person/nbproject/private/
 /Person/build/
+<<<<<<< HEAD
 /Ch13ExampleProjects/BoxProject/nbproject/private/
 /Ch13ExampleProjects/BoxProject/build/
 /Ch13ExampleProjects/Vehicle/nbproject/private/
 /Ch13ExampleProjects/Vehicle/build/
+=======
+/Ch13ExerciseProjects/Employee/nbproject/private/
+/Ch13ExerciseProjects/Employee/build/
+>>>>>>> Ch13ExerciseProjects
