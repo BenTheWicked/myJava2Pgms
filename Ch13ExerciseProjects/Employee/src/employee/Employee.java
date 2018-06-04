@@ -1,21 +1,49 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*******************************************************************
+ * Employee.java
+ * Ben Davis
+ * 
+ * This is the superclass for the payrolls project.
+ *******************************************************************/
 package employee;
 
-/**
- *
- * @author BenTheWicked
- */
 public class Employee {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    private String firstName;
+    private String lastName;
+    
+    //****************************************************************
+    
+    public Employee() 
+        { }
+    
+    public Employee(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
     
+    //****************************************************************
+    
+    public String getFirstName() {
+        return this.firstName;
+    }
+    
+    public String getLastName() {
+        return this.lastName;
+    }
+    
+    //***************************************************************
+    
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    
+    //***************************************************************
+    
+    public String getFullName() {
+        String fullName = getFirstName() + " " + getLastName();
+        return fullName;
+    }
 }
