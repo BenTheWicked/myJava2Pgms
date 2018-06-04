@@ -21,6 +21,6 @@ public class FullTime extends Employee {
     @Override
     public void display() {
         super.display();
-        System.out.printf(" salary: $%,.0f\n", salary);
+        System.out.printf("salary: $%,.0f\n", salary);
     }
 }   // end FullTime class
