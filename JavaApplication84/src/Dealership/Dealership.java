@@ -4,9 +4,9 @@
  * 
  * This represents an auto retail sales organization. (pg. 569)
  ********************************************************************/
-package javaapplication84;
+package Dealership;
 import java.util.ArrayList;
-public class JavaApplication84 {
+public class Dealership {
     private String company;
     private Manager manager;
     private ArrayList<SalesPerson> people = new ArrayList<>();
