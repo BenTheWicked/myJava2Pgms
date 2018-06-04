@@ -43,5 +43,15 @@ public class HourlyEmployees extends Employee {
     
     //****************************************************************
     
-    
+    public double grossPay(double payRate, int hoursWorked) {
+        double grossPay = 0.0;
+        
+        // Calculate overtime
+        if (hoursWorked > 40) {
+            grossPay += (hoursWorked - 40) * (payRate * 1.5);
+        }
+        
+        grossPay += hoursWorked * payRate;
+        return grossPay;
+    }
 }
