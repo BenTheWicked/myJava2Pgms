@@ -8,7 +8,7 @@ package employee;
 
 public class HourlyEmployees extends Employee {
     private double payRate;
-    private int hoursWorked;
+    private double hoursWorked;
     
     //****************************************************************
     
@@ -27,7 +27,7 @@ public class HourlyEmployees extends Employee {
         return this.payRate;
     }
     
-    public int getHoursWorked() {
+    public double getHoursWorked() {
         return this.hoursWorked;
     }
     
@@ -37,13 +37,13 @@ public class HourlyEmployees extends Employee {
         this.payRate = payRate;
     }
     
-    public void setHoursWorked(int hoursWorked) {
+    public void setHoursWorked(double hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
     
     //****************************************************************
     
-    public double grossPay(double payRate, int hoursWorked) {
+    public double grossPay(double payRate, double hoursWorked) {
         double grossPay = 0.0;
         
         // Calculate overtime
