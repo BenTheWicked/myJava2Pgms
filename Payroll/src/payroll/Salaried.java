@@ -6,7 +6,7 @@
  ********************************************************************/
 package payroll;
 
-public class Salaried extends Employee{
+public class Salaried extends Employee2{
     private double salary;          // per year
     
     //***************************************************************

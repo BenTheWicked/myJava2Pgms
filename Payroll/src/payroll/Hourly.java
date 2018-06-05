@@ -6,7 +6,7 @@
  ********************************************************************/
 package payroll;
 
-public class Hourly extends Employee{
+public class Hourly extends Employee2{
     private double hourlyRate;
     private double hours = 0.0;
     
