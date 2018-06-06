@@ -23,10 +23,10 @@ public abstract class Employee3
 
   //************************************************************
 
-  public void printPay(int date)
+  public void printPay(double pay)
   {
     System.out.printf("%10s : $%,10.2f\n",
-      name, getPay());
+      name, pay);
   } // end printPay
 
   //************************************************************

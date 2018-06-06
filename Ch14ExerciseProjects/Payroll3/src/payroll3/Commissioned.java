@@ -33,7 +33,7 @@ public class Commissioned extends Employee3 implements Commission
   {
     double pay = COMMISSION_RATE * sales;
     pay -= getFICA(pay);
-    //sales = 0.0;
+    sales = 0.0;
     return pay;
   } // end getPay
 } // end class Commissioned

@@ -25,7 +25,7 @@ public class Hourly2 extends Employee3
   {
     double pay = hourlyRate * hours;
     pay -= getFICA(pay);
-    //hours = 0.0;
+    hours = 0.0;
     return pay;
   } // end getPay
 
