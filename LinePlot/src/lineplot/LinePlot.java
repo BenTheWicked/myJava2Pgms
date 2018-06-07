@@ -38,12 +38,12 @@ public class LinePlot {
             try {
                 x = Integer.parseInt(xStr);
                 y = Integer.parseInt(yStr);
+                line.plotSegment(x, y);
             }
             catch (NumberFormatException nfe) {
                 System.out.println("Invalid entry: " + xStr + " " +
                         yStr + "\nMust enter integer space integer.");
             }
-            line.plotSegment(x, y);
             System.out.print("Enter x & y coordinates (q to quit): ");
             xStr = stdIn.next();
         }   // end while
