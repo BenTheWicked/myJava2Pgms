@@ -28,7 +28,27 @@ public class StudentList {
     
     //****************************************************************
     
+    // removeStudent method with try-catch mechanism
+    /*
     public void removeStudent(int index) {
-        students.remove(index);
+        try {
+            students.remove(index);
+        }
+        catch (IndexOutOfBoundsException e) {
+            System.out.println("Can't remove studnet because " +
+                    index + " is an invalid index position." );
+        }
     }   // end removeStudent
+    */
+    
+    public void removeStudent(int index) {
+        if (index >= 0 && index < students.size()) {
+            students.remove(index);
+        }
+        else {
+            System.out.println("Can't remove student because " +
+                    index + " is an invalid index position.");
+        }
+    }   // end removeStudent
+    
 }   // end StudentList
