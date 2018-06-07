@@ -35,8 +35,14 @@ public class LinePlot {
         xStr = stdIn.next();
         while (!xStr.equalsIgnoreCase("q")) {
             yStr = stdIn.next();
-            x = Integer.parseInt(xStr);
-            y = Integer.parseInt(yStr);
+            try {
+                x = Integer.parseInt(xStr);
+                y = Integer.parseInt(yStr);
+            }
+            catch (NumberFormatException nfe) {
+                System.out.println("Invalid entry: " + xStr + " " +
+                        yStr + "\nMust enter integer space integer.");
+            }
             line.plotSegment(x, y);
             System.out.print("Enter x & y coordinates (q to quit): ");
             xStr = stdIn.next();
