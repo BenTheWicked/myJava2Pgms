@@ -24,11 +24,11 @@ public class CreateNewFile {
         else {
             try {
                 Files.createFile(path);
+                System.out.println(filename + " created.");
             }
             catch (IOException ioe) {
                 System.out.println("File I/O error");
             }
-            System.out.println(filename + " created.");
         }
     }   // end main
     
