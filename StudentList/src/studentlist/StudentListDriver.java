@@ -9,7 +9,7 @@ package studentlist;
 public class StudentListDriver {
     public static void main(String[] args) {
         String[] names = {"Caleb", "Izumi", "Mary", "Usha"};
-        StudentList studentList = new StudentList(names);
+        StudentList2 studentList = new StudentList2(names);
         
         studentList.display();
         studentList.removeStudent(6);
