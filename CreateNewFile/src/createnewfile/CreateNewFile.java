@@ -7,6 +7,7 @@
 package createnewfile;
 import java.util.Scanner;
 import java.nio.file.*;         // Path, Paths, Files
+import java.io.IOException;
 public class CreateNewFile {
 
     public static void main(String[] args) {
@@ -21,7 +22,12 @@ public class CreateNewFile {
             System.out.println("Sorry, that file already exists.");
         }
         else {
-            Files.createFile(path);
+            try {
+                Files.createFile(path);
+            }
+            catch (IOException ioe) {
+                System.out.println("File I/O error");
+            }
             System.out.println(filename + " created.");
         }
     }   // end main
