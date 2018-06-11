@@ -43,8 +43,8 @@ public class StudentListDriver {
             
             studentList3 = studentList2;
             System.out.println("List 3: removed some names");
-            studentList3.removeStudent(1);
             studentList3.removeStudent(3);
+            studentList3.removeStudent(1);
             studentList3.display();
             fileOut.writeObject(studentList3);
             fileOut.reset();
