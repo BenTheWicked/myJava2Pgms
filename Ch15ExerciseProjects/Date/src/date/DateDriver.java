@@ -12,11 +12,11 @@ public class DateDriver {
         Scanner stdIn = new Scanner(System.in);
         String dateStr = "";
         Date date;
+        System.out.print("Enter a date in the form mm/dd "
+            + "(\"q\" to quit): ");
+        dateStr = stdIn.nextLine();
         
         while (!dateStr.equalsIgnoreCase("q")) {
-            System.out.print("Enter a date in the form mm/dd "
-                    + "(\"q\" to quit): ");
-            dateStr = stdIn.nextLine();
             date = new Date(dateStr);
             if (date.getError() == null) {
                 date.printResults();
@@ -24,6 +24,9 @@ public class DateDriver {
             else {
                 System.out.println(date.getError());
             }
+            System.out.print("Enter a date in the form mm/dd "
+                + "(\"q\" to quit): ");
+            dateStr = stdIn.nextLine();
         }
     }
 }
