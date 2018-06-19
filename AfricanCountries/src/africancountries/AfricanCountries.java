@@ -18,13 +18,16 @@ public class AfricanCountries extends JFrame {
         setSize(WIDTH, HEIGHT);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        add(new JButton("Tunisia"), BorderLayout.NORTH);
-        add(new JButton("<html>South<br />Africa</html>"),
-                BorderLayout.SOUTH);
-        add(new JButton("Western Sahara"), BorderLayout.WEST);
-        add(new JButton("Central African Republic"),
-                BorderLayout.CENTER);
-        add(new JButton("Somalia"), BorderLayout.EAST);
+        add(new JLabel("Tunisia", SwingConstants.CENTER),
+                BorderLayout.NORTH);
+        add(new JLabel("<html>South<br />Africa</html>",
+                SwingConstants.CENTER), BorderLayout.SOUTH);
+        add(new JLabel("Western Sahara", SwingConstants.CENTER),
+                BorderLayout.WEST);
+        add(new JLabel("Central African Republic"
+                , SwingConstants.CENTER), BorderLayout.CENTER);
+        add(new JLabel("Somalia", SwingConstants.CENTER), 
+                BorderLayout.EAST);
         setVisible(true);
     }   // end AfricanCountries constructor
     
