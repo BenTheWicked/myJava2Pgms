@@ -1,0 +1,20 @@
+Alpine Skiing, true, Askel Lund SVINDAL, 100.25
+Alpine Skiing, true, Kjetil JANSRUD, 100.37
+Alpine Skiing, true, Beat FEUZ, 100.43
+Alpine Skiing, true, Dominik PARIS, 100.79
+Alpine Skiing, true, Thomas DRESSEN, 101.03
+Speed Skating, true, Havard LORENTZEN, 34.41
+Speed Skating, true, Min Kyu CHA, 34.42
+Speed Skating, true, Tingyu GAO, 34.65
+Speed Skating, true, Mika POUTALA, 34.68
+Speed Skating, true, Daichi YAMANAKA, 34.78
+Ice Hockey, false, UNITED STATES, 5
+Ice Hockey, false, CANADA, 4
+Ice Hockey, false, FINLAND, 3
+Ice Hockey, false, OLYMPIC ATHLETES FROM RUSSIA, 2
+Ice Hockey, false, SWITZERLAND, 1
+Snowboard, false, Chloe KIM, 10
+Snowboard, false, Jiayu LIU, 9.9
+Snowboard, false, Arielle GOLD, 9.8
+Snowboard, false, Kelly CLARK, 9.7
+Snowboard, flase, Xuetong CAI, 9.6
